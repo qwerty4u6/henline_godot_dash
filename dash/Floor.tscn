@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgsewb7pwx770"]
+
+[ext_resource type="Script" path="res://Floor.gd" id="1_8gtw7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghii0"]
+size = Vector2(1972, 260)
+
+[node name="Floor" type="Area2D"]
+script = ExtResource("1_8gtw7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ghii0")
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = -986.0
+offset_top = -130.0
+offset_right = 986.0
+offset_bottom = 130.0
